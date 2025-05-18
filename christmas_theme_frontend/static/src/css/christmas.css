@@ -1,0 +1,170 @@
+/* Fondo del portal */
+body, html, .portal, .o_portal_wrap, .portal_page {
+    background: linear-gradient(to bottom, #d0f0f7, #ffffff) !important;
+    color: #004d66 !important;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tarjetas */
+.card, .portal_page .card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid #81d4fa;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6, strong {
+    color: #01579b !important;
+}
+
+/* Botones */
+.btn, .btn-primary {
+    background-color: #0288d1 !important;
+    border-color: #0277bd !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+.btn:hover {
+    background-color: #039be5 !important;
+}
+
+/* Inputs y selects */
+input, textarea, select {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid #81d4fa !important;
+    border-radius: 16px !important;
+    padding: 10px !important;
+    color: #01579b !important;
+    width: 100%;
+    font-weight: 500;
+}
+input:focus, textarea:focus, select:focus {
+    border-color: #0288d1 !important;
+    box-shadow: 0 0 5px #4fc3f7;
+}
+
+/* Tablas */
+table {
+    background-color: rgba(255,255,255,0.95) !important;
+    border-radius: 12px;
+    border: 1px solid #b3e5fc;
+}
+th, td {
+    border: 1px solid #b3e5fc;
+    padding: 8px;
+}
+
+/* 🎯 LISTA DE DOCUMENTOS - o_portal_docs */
+.o_portal_docs.list-group {
+    background-color: #ffffff !important; /* fondo visible entre ítems */
+    border: 1px solid #b3e5fc !important;
+    border-radius: 14px !important;
+    padding: 0.5rem !important;
+}
+
+/* Ítems congelados */
+.o_portal_docs.list-group .list-group-item {
+    background-color: rgba(176, 224, 245, 0.3) !important;
+    border: none !important;
+    border-radius: 14px !important;
+    margin-bottom: 0.5rem;
+    padding: 12px 16px !important;
+    color: #01579b !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.o_portal_docs.list-group .list-group-item:last-child {
+    margin-bottom: 0 !important;
+}
+.o_portal_docs.list-group .list-group-item:hover {
+    background-color: rgba(129, 212, 250, 0.5) !important;
+    box-shadow: 0 0 6px rgba(129, 212, 250, 0.4);
+}
+
+/* ❄️ Badges */
+.badge.text-bg-secondary.rounded-pill {
+    background-color: #0288d1 !important;
+    color: white !important;
+    border-radius: 999px !important;
+    padding: 0.4em 0.75em !important;
+    font-weight: 600;
+    box-shadow: 0 0 5px rgba(129, 212, 250, 0.6);
+    border: 1px solid #4fc3f7;
+}
+
+/* Estilo general para inputs ocultos */
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 0;
+    border: 2px solid #0288d1;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Checkboxes */
+input[type="checkbox"]::before {
+    content: "✓";
+    position: absolute;
+    color: #0288d1;
+    font-size: 14px;
+    left: 2px;
+    top: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    border-radius: 50%;
+}
+input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #0288d1;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+/* Iconos del estilo */
+/*
+🎄 Árbol de Navidad
+🎅 Papá Noel
+❄️ Copo de nieve
+⛄ Muñeco de nieve
+🎁 Regalo
+🔔 Campana
+⭐ Estrella
+🍪 Galleta
+🦌 Reno
+🧦 Calcetín
+🛷 Trineo
+🎶 Villancico
+✨ Destellos
+🧤 Guantes
+🧣 Bufanda
+*/

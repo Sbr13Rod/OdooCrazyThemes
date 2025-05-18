@@ -1,0 +1,36 @@
+/* Barra superior congelada */
+.o_portal_navbar, .navbar, header#top {
+    background: rgba(176, 224, 245, 0.6) !important;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #b3e5fc;
+    box-shadow: 0 2px 6px rgba(129, 212, 250, 0.2);
+}
+
+/* Enlaces dentro de la barra */
+.o_portal_navbar a,
+.navbar a,
+header#top a {
+    color: #01579b !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.o_portal_navbar a:hover,
+.navbar a:hover,
+header#top a:hover {
+    color: #0288d1 !important;
+}
+
+/* Íconos o botones */
+.o_portal_navbar .btn,
+.navbar .btn {
+    background-color: #0288d1 !important;
+    border-color: #0288d1 !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+.o_portal_navbar .btn:hover,
+.navbar .btn:hover {
+    background-color: #004d66 !important;
+}
