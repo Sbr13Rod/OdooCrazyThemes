@@ -1,0 +1,31 @@
+/* 🌸 Hojas de sakura */
+.sakura-petal {
+    position: fixed;
+    top: -5vh;
+    z-index: 9999;
+    pointer-events: none;
+    user-select: none;
+    animation-name: fallAndDrift;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fallAndDrift {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        top: -10vh;
+    }
+    25% {
+        transform: translateX(-20vw) rotate(90deg);
+    }
+    50% {
+        transform: translateX(0vw) rotate(180deg);
+    }
+    75% {
+        transform: translateX(0) rotate(270deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+        top: 110vh;
+    }
+}
