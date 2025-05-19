@@ -182,3 +182,7 @@ input[type="radio"] + label::after {
   pointer-events: none;
 }
 
+/* Ocultar el círculo cuando está marcado para que solo quede el regalo */
+input[type="radio"]:checked + label::after {
+  content: none;
+}

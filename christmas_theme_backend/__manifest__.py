@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     'name': 'Christmas Backend Theme',
-    'version': '16.0.1.0.0',
+    'version': '16.0.1.0.1',
     'summary': 'A festive Christmas theme for the Odoo backend',
     'description': 'Brings a joyful Christmas spirit to the Odoo backend with snowfall effects, themed icons, and frosty UI enhancements.',
     'author': 'Salva Benlloch Romo',

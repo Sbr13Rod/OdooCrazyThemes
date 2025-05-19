@@ -42,6 +42,13 @@ Known Issues / Limitations
 Changelog
 =========
 
+16.0.1.0.1 (19-05-2025)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* Improved styles applied across all views for a more consistent and polished appearance.
+* Enhanced responsiveness and visual harmony in the user interface.
+* Minor CSS adjustments to fix layout inconsistencies.
+
 16.0.1.0.0 (18-05-2025)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
