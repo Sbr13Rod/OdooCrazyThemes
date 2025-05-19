@@ -1,0 +1,184 @@
+/* Fondo nevado general */
+.o_web_client.estilo-nevado {
+  background: linear-gradient(to bottom, #c9d6ff, #e2e2e2);
+  color: #003366;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Inputs y selects */
+.o_web_client.estilo-nevado input,
+.o_web_client.estilo-nevado select {
+  background: #ffffff;
+  border: 2px solid #99c2ff;
+  border-radius: 10px;
+  color: #003366;
+}
+
+/* Tablas */
+.o_web_client.estilo-nevado table {
+  border: none;
+  background-color: #ffffffc0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #99c2ff;
+}
+
+/* Celdas */
+.o_web_client.estilo-nevado td {
+  background-color: #dbeeff;
+  border-radius: 10px;
+  border: 1px solid #a3cfff;
+}
+
+/* Hover */
+.o_web_client.estilo-nevado td:hover {
+  background-color: #b3d9ff;
+}
+
+/* Tooltip */
+.o_web_client.estilo-nevado .tooltip {
+  background-color: #003366;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #003366;
+}
+
+
+/* Aplicar sólo dentro del backend con el tema nevado */
+.o_web_client.estilo-nevado input[type="checkbox"],
+.o_web_client.estilo-nevado input[type="radio"] {
+  /* Color del check y punto radio */
+  accent-color: #cc0000; /* rojo navideño */
+
+  /* Tamaño para que sean visibles */
+  width: 18px;
+  height: 18px;
+
+  /* Opcional: mejorar bordes */
+  border: 2px solid #99c2ff;
+  border-radius: 4px;
+
+  /* Fondo blanco para contraste */
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Opcional: cuando están deshabilitados */
+.o_web_client.estilo-nevado input[type="checkbox"]:disabled,
+.o_web_client.estilo-nevado input[type="radio"]:disabled {
+  accent-color: #999999;
+  cursor: not-allowed;
+}
+
+/* Enfocar para accesibilidad */
+.o_web_client.estilo-nevado input[type="checkbox"]:focus,
+.o_web_client.estilo-nevado input[type="radio"]:focus {
+  outline: 2px solid #cc0000;
+  outline-offset: 2px;
+}
+
+/* Para que label se vea más claro al seleccionar checkbox o radio */
+.o_web_client.estilo-nevado input[type="checkbox"]:checked + label,
+.o_web_client.estilo-nevado input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #cc0000;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 18px;    /* Igual que el icono */
+  height: 18px;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px; /* espacio para el regalo */
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;  /* Alinea texto con checkbox */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #99c2ff;
+  border-radius: 4px;
+  background: white;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "🎁";
+  font-size: 18px;
+  color: #cc0000;
+  text-align: center;
+  line-height: 18px;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px; /* deja espacio para el regalo */
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* El regalo encima del radio */
+input[type="radio"]:checked + label::before {
+  content: "❄️";
+  font-size: 18px;
+  color: #cc0000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Para mostrar el círculo cuando NO está marcado */
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #99c2ff;
+  border-radius: 50%;
+  background: white;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+

@@ -1,0 +1,112 @@
+.o_form_view {
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.o_form_view .o_form_sheet_bg {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(129, 212, 250, 0.6);
+  padding: 2rem;
+}
+
+.o_form_view input, .o_form_view select, .o_form_view textarea {
+  background: #ffffff;
+  border: 2px solid #b3e5fc;
+  border-radius: 10px;
+  padding: 10px;
+  color: #0277bd;
+  font-weight: 500;
+  box-shadow: 0 0 4px rgba(79, 195, 247, 0.4);
+}
+
+.o_form_view input:focus,
+.o_form_view select:focus,
+.o_form_view textarea:focus {
+  border-color: #0288d1;
+  box-shadow: 0 0 6px #4fc3f7;
+}
+
+/* Encabezados del tree en formularios */
+/* 🌨️ Tabla editable (tree dentro del form en Odoo 16) */
+.o_form_view .o_list_renderer table {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  border: 1px solid #b3e5fc;
+  box-shadow: 0 4px 8px rgba(129, 212, 250, 0.4);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 🧊 Encabezados de columnas */
+.o_form_view .o_list_renderer thead th {
+  background-color: #e1f5fe;
+  color: #01579b;
+  font-weight: 600;
+  border: 1px solid #b3e5fc;
+  padding: 0.6rem;
+}
+
+/* ❄️ Celdas del cuerpo */
+.o_form_view .o_list_renderer tbody td {
+  background-color: #f0fbff;
+  color: #004d66;
+  border: 1px solid #b3e5fc;
+  padding: 0.6rem;
+}
+
+/* Hover sobre filas */
+.o_form_view .o_list_renderer tbody tr:hover {
+  background-color: #d2ecff;
+}
+
+/* 🎯 Inputs en edición */
+.o_form_view .o_list_renderer input,
+.o_form_view .o_list_renderer select,
+.o_form_view .o_list_renderer textarea {
+  background: white !important;
+  border: 1px solid #81d4fa !important;
+  border-radius: 10px;
+  padding: 4px 8px;
+  color: #01579b !important;
+}
+
+/* 🧊 Botones de la tabla (agregar, eliminar, etc.) */
+.o_form_view .o_list_renderer .btn {
+  background-color: #0288d1;
+  border-color: #0277bd;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+.o_form_view .o_list_renderer .btn:hover {
+  background-color: #039be5;
+}
+
+
+
+.o_form_view .o_list_view thead {
+  background-color: #b3e5fc;
+  color: #01579b;
+  font-weight: bold;
+  border-bottom: 2px solid #4fc3f7;
+}
+
+.o_form_view .o_list_view tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.o_form_view .o_list_view tbody tr:nth-child(even) {
+  background-color: rgba(176, 224, 245, 0.15);
+}
+
+.o_form_view .o_list_view tbody tr:hover {
+  background-color: rgba(129, 212, 250, 0.25);
+}
+
+.o_form_view .o_group .o_td_label label,
+.o_form_view .o_group .o_label {
+  color: #0277bd !important; /* azul hielo */
+  font-weight: 600;
+}
