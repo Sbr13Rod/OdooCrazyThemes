@@ -1,0 +1,91 @@
+.o_ChatWindow {
+  background: linear-gradient(to bottom, rgba(240, 248, 255, 0.95), #ffffff) !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+  box-shadow: 0 -4px 12px rgba(129, 212, 250, 0.4);
+  border: 1px solid #b3e5fc;
+  backdrop-filter: blur(6px);
+  font-family: 'Segoe UI', sans-serif;
+  color: #01579b;
+}
+
+/* Cabecera del chat */
+.o_ChatWindow .o_ChatWindowHeader {
+  background-color: rgba(129, 212, 250, 0.15);
+  color: #0277bd;
+  font-weight: bold;
+  border-bottom: 1px solid #81d4fa;
+  padding: 0.75rem 1rem;
+}
+
+/* Área de mensajes */
+.o_ChatWindow .o_ChatWindowContent {
+  background: transparent;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Cada mensaje */
+.o_ChatWindow .o_ChatMessage {
+  background-color: rgba(129, 212, 250, 0.1);
+  border: 1px solid #b3e5fc;
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #01579b;
+}
+
+/* Input del mensaje */
+.o_ChatWindow .o_ChatWindowComposer textarea,
+.o_ChatWindow .o_ChatWindowComposer input {
+  background-color: white;
+  border: 2px solid #81d4fa;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  color: #01579b;
+  box-shadow: 0 0 4px rgba(79, 195, 247, 0.4);
+}
+
+/* Botón de envío */
+.o_ChatWindow .o_ChatWindowComposer .btn {
+  background-color: #0288d1;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-left: 0.5rem;
+}
+
+.o_ChatWindow .o_ChatWindowComposer .btn:hover {
+  background-color: #039be5;
+}
+
+.o_Message_background.position-absolute.start-0.top-0.w-100.h-100.rounded-end-3.rounded-bottom-3.border.o-isAuthorNotCurrentUserOrGuest.border-info.bg-info-light {
+  background: linear-gradient(to bottom, #a3cce6, #7fbcd3) !important;
+  color: #01579b !important; /* Azul hielo */
+  font-family: 'Segoe UI', sans-serif;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(129, 212, 250, 0.4);
+  box-shadow: 0 -4px 12px rgba(129, 212, 250, 0.4);
+  border: 1px solid #b3e5fc;
+}
+
+/* Aseguramos que todo el texto dentro del mensaje sea azul */
+.o_Message_bubbleWrap * {
+  color: #01579b !important;
+  background: linear-gradient(to bottom, rgba(240, 248, 255, 0.95), #ffffff) !important;
+}
+
+/* Estilo especial para los enlaces dentro del mensaje */
+.o_Message_bubbleWrap a {
+  background: linear-gradient(to bottom, white 30%, red 70%);
+  color: red !important;
+  font-weight: bold;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+.o_Message_background a:hover {
+  opacity: 0.8;
+}

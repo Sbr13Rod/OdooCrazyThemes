@@ -1,0 +1,106 @@
+/* Fondo general del kanban: degradado suave azul-nevado */
+.o_kanban_view {
+  background: linear-gradient(to right, #e1f5fe, #ffffff);
+  padding: 1rem;
+}
+
+/* Estilo base de cada tarjeta kanban */
+.o_kanban_record {
+  background: linear-gradient(to top, #cce6f2, #e0f4ff);
+  border: 1px solid #81d4fa; /* Borde celeste hielo */
+  border-radius: 14px; /* Esquinas redondeadas */
+  box-shadow: 0 2px 8px rgba(129, 212, 250, 0.3); /* Sombra azulada suave */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto escarcha interior (más hielo visual) */
+.o_kanban_record::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 💨 Hover suave */
+.o_kanban_view .o_kanban_record:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(129, 212, 250, 0.6);
+}
+
+/* 🧊 Contenedores internos */
+.o_kanban_view .o_kanban_record .o_kanban_details,
+.o_kanban_view .o_kanban_record .o_kanban_content {
+  background: rgba(240, 248, 255, 0.6); /* azul hielo */
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: inset 0 0 5px rgba(129, 212, 250, 0.4);
+}
+/* Texto principal con color azul profundo */
+.o_kanban_record .oe_kanban_global_click {
+  color: #01579b;
+  position: relative;
+  z-index: 1;
+}
+
+/* ❄️ Opcional: borde con aspecto cristalino helado */
+.o_kanban_record::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(129, 212, 250, 0.25);
+  box-shadow: inset 0 0 10px rgba(129, 212, 250, 0.15);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ❌ Ocultar tarjetas vacías (sin contenido visible dentro) */
+.o_kanban_view .o_kanban_record:empty {
+  display: none;
+}
+
+/* 🧠 Alternativa más robusta (si el kanban tiene hijos pero no visibles) */
+.o_kanban_view .o_kanban_record:not(:has(.oe_kanban_global_click, .o_kanban_details, .o_kanban_image)):not(:hover) {
+  display: none;
+}
+
+.oe_kanban_card {
+  border: 1px solid #81d4fa !important; /* Borde celeste hielo */
+  border-radius: 14px; /* Esquinas redondeadas */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* borde interior clicable de los kanban */
+.oe_kanban_global_click {
+  border: 1px solid #81d4fa !important; /* Borde celeste hielo */
+  border-radius: 14px; /* Esquinas redondeadas */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Borde interior del kanban de operaciones*/
+.oe_kanban_color_0 {
+  border: 1px solid #81d4fa !important; /* Borde celeste hielo */
+  border-radius: 14px; /* Esquinas redondeadas */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}

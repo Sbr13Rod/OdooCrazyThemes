@@ -1,0 +1,214 @@
+  /* Fondo estilo sakura */
+.o_web_client {
+  background: linear-gradient(to bottom, #ffeef8, #fff8f2); /* rosado claro a crema */
+  color: #6b3053; /* tono ciruela o sakura profundo */
+  overflow: hidden;
+  position: relative;
+}
+
+.o_web_client .btn.btn-primary {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.o_web_client .btn.btn-secondary {
+  color: #d81b60 !important;
+}
+
+/* Inputs y selects */
+.o_web_client input,
+.o_web_client select
+.o_web_client textarea {
+  background: #fffafa !important;
+  border: 2px solid #ec407a !important;
+  border-radius: 12px;
+  padding: 6px 10px;
+  color: #ad1457 !important;
+}
+
+.o_web_client .o_external_button .fa-arrow-right {
+  color: #d81b60 !important; /* Rosa Sakura fuerte */
+}
+
+
+
+
+/* Tooltip */
+.o_web_client .tooltip {
+  background-color: #6b3053;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #6b3053;
+}
+
+
+/* Aplicar sólo dentro del backend con el tema sakura */
+.o_web_client input[type="checkbox"],
+.o_web_client input[type="radio"] {
+  accent-color: #d6336c; /* rosa fuerte sakura */
+  width: 18px;
+  height: 18px;
+  position: relative;
+  border: 2px solid #f4a9bb;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Deshabilitados */
+.o_web_client input[type="checkbox"]:disabled{
+  accent-color: #bbbbbb;
+  cursor: not-allowed;
+}
+
+/* Accesibilidad */
+.o_web_client input[type="checkbox"]:focus {
+  outline: 2px solid #d6336c;
+  outline-offset: 2px;
+}
+
+/* Label resaltado */
+.o_web_client input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #d6336c;
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  left: 1px;
+  font-size: 18px;
+}
+
+/* Radios */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Flor sobre el radio */
+input[type="radio"]:checked + label::before {
+  content: "🌸";
+  font-size: 18px;
+  color: #d6336c;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Borde visible para radios no marcados */
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f4a9bb;
+  border-radius: 50%;
+  background: white;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* Ocultar el círculo cuando está marcado para que solo quede el regalo */
+input[type="radio"]:checked + label::after {
+  content: none;
+}
+
+.o_navbar {
+  background: #d81b60;
+  border-bottom: 2px solid #f8bbd0;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+}
+
+.o_main_navbar {
+  background: #d81b60;
+  border-bottom: 2px solid #f8bbd0;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+}
+
+/* Elementos del navbar */
+.o_navbar a,
+.o_navbar .btn,
+.o_navbar .dropdown-toggle {
+  color: white!important;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+
+/* Hover y focus */
+.o_navbar a:hover,
+.o_navbar .btn:hover,
+.o_navbar .dropdown-toggle:hover {
+  color: #d81b60 !important;
+  background: #d81b60;
+  border-radius: 6px;
+}
+
+.o_web_client .o_searchview_facet {
+  border: 2px solid #f8bbd0;         /* borde rosa */
+  background-color: #fff0f5;         /* fondo suave */
+  color: #ad1457;                    /* texto rosa oscuro */
+  border-radius: 12px;               /* esquinas redondeadas */
+  padding: 4px 8px;
+  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+  transition: all 0.2s ease;
+}
+
+/* Icono del filtro */
+.o_web_client .o_searchview_facet .fa-filter {
+  color: #d6336c;  /* icono filtro rosa fuerte */
+  margin-right: 4px;
+}
+
+/* Texto del valor del filtro */
+.o_web_client .o_facet_values .o_facet_value {
+  color: #880e4f;
+  font-weight: 500;
+}
+
+/* Botón de cerrar (icono de quitar filtro) */
+.o_web_client .o_facet_remove {
+  color: #d6336c;
+  opacity: 0.6;
+  background-color: #fff0f5;         /* fondo suave */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.o_web_client .o_facet_remove:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+

@@ -1,0 +1,33 @@
+/* TREE::INICIO */
+/* Tablas */
+.o_list_view table {
+  background-color: rgba(255, 248, 252, 0.98);
+  border-radius: 16px;
+  border: 2px solid #f8bbd0;
+  box-shadow: 0 6px 12px rgba(255, 182, 193, 0.6);
+  overflow: hidden;
+  width: 100%;
+  table-layout: auto !important;
+}
+
+.o_list_view thead th {
+  background-color: #fce4ec;
+  color: #ad1457;
+  font-weight: 700;
+  border: 1px solid #f8bbd0;
+  padding: 0.8rem;
+  text-shadow: 1px 1px #fff;
+}
+
+.o_list_view tbody td {
+  background-color: #fff0f5;
+  color: #6a1b4d;
+  border: 1px solid #f8bbd0;
+  padding: 0.8rem;
+}
+
+/* Hover sobre filas */
+.o_list_view tbody tr:hover {
+  background-color: #fcd2e2;
+  transition: background-color 0.2s ease;
+}

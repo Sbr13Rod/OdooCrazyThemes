@@ -186,3 +186,28 @@ input[type="radio"] + label::after {
 input[type="radio"]:checked + label::after {
   content: none;
 }
+
+/* This styles are not sure are needed */
+/*
+.o_main_navbar {
+  background: linear-gradient(to bottom, rgba(240, 248, 255, 0.95), #ffffff) !important;
+  color: #01579b !important;
+}
+*/
+/* Iconos y textos dentro del navbar */
+/*
+.o_main_navbar .dropdown-toggle,
+.o_main_navbar .o_menu_brand,
+.o_main_navbar .o_user_menu a,
+.o_main_navbar .o_menu_systray > * {
+  color: #0277bd !important;
+}
+*/
+/* Hover efecto */
+/*
+.o_main_navbar a:hover,
+.o_main_navbar button:hover {
+  color: #01579b !important;
+  text-shadow: 0 0 2px rgba(79, 195, 247, 0.6);
+}
+*/

@@ -1,0 +1,245 @@
+/* Fondo estilo sakura */
+.o_web_client.estilo-sakura {
+  background: linear-gradient(to bottom, #ffeef8, #fff8f2); /* rosado claro a crema */
+  color: #6b3053; /* tono ciruela o sakura profundo */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Inputs y selects */
+.o_web_client.estilo-sakura input,
+.o_web_client.estilo-sakura select {
+  background: #ffffff;
+  border: 2px solid #f4a9bb; /* rosa suave */
+  border-radius: 10px;
+  color: #6b3053;
+}
+
+/* Tablas */
+.o_web_client.estilo-sakura table {
+  border: none;
+  background-color: #fff6fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #f4a9bb;
+}
+
+/* Celdas */
+.o_web_client.estilo-sakura td {
+  background-color: #ffe5ec;
+  border-radius: 10px;
+  border: 1px solid #f9b5c5;
+}
+
+/* Hover */
+.o_web_client.estilo-sakura td:hover {
+  background-color: #fdd6e5;
+}
+
+/* Tooltip */
+.o_web_client.estilo-sakura .tooltip {
+  background-color: #6b3053;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #6b3053;
+}
+
+
+/* Aplicar sólo dentro del backend con el tema sakura */
+.o_web_client.estilo-sakura input[type="checkbox"],
+.o_web_client.estilo-sakura input[type="radio"] {
+  accent-color: #d6336c; /* rosa fuerte sakura */
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #f4a9bb;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Deshabilitados */
+.o_web_client.estilo-sakura input[type="checkbox"]:disabled,
+.o_web_client.estilo-sakura input[type="radio"]:disabled {
+  accent-color: #bbbbbb;
+  cursor: not-allowed;
+}
+
+/* Accesibilidad */
+.o_web_client.estilo-sakura input[type="checkbox"]:focus,
+.o_web_client.estilo-sakura input[type="radio"]:focus {
+  outline: 2px solid #d6336c;
+  outline-offset: 2px;
+}
+
+/* Label resaltado */
+.o_web_client.estilo-sakura input[type="checkbox"]:checked + label,
+.o_web_client.estilo-sakura input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #d6336c;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f4a9bb;
+  border-radius: 4px;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Emoji de flor de sakura 🌸 */
+input[type="checkbox"]:checked + label::before {
+  content: "🌸";
+  font-size: 18px;
+  color: #d6336c;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Radios */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Flor sobre el radio */
+input[type="radio"]:checked + label::before {
+  content: "🌸";
+  font-size: 18px;
+  color: #d6336c;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Borde visible para radios no marcados */
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f4a9bb;
+  border-radius: 50%;
+  background: white;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+/* Ocultar el círculo cuando está marcado para que solo quede el regalo */
+input[type="radio"]:checked + label::after {
+  content: none;
+}
+
+.o_navbar {
+  background: #d81b60;
+  border-bottom: 2px solid #f8bbd0;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+}
+
+.o_main_navbar {
+  background: #d81b60;
+  border-bottom: 2px solid #f8bbd0;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.3);
+}
+
+/* Elementos del navbar */
+.o_navbar a,
+.o_navbar .btn,
+.o_navbar .dropdown-toggle {
+  color: white!important;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+}
+
+/* Hover y focus */
+.o_navbar a:hover,
+.o_navbar .btn:hover,
+.o_navbar .dropdown-toggle:hover {
+  color: #d81b60 !important;
+  background: #d81b60;
+  border-radius: 6px;
+}
+
+// Sobrescribir btn-secondary al estilo Sakura
+.btn.btn-secondary {
+  background-color: #ffe4e9; // rosa pétalo
+  color: #a52a6b;            // texto en tono sakura
+  border: 1px solid #f8cddf;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+// Hover
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus {
+  background-color: #ffc1d6;
+  color: #800040;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.3);
+  border-color: #f4a2c1;
+}
+
+// Íconos Font Awesome en botones
+.btn.btn-secondary .fa {
+  margin-right: 0.4rem;
+  color: inherit; // hereda el color del texto
+}
+

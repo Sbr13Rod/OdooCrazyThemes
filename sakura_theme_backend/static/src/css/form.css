@@ -1,0 +1,234 @@
+
+/* BOTONES DEL HEADER::INICIO */
+/* Botón de estado actual (si se usa .btn-primary) */
+.o_form_statusbar .btn.btn-primary {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.o_form_statusbar .btn.btn-secondary {
+  color: #d81b60 !important;
+}
+/* BOTONES DEL HEADER::FIN */
+
+/* STATUSBAR::INICIO */
+/* Texto de la barra de estado (nombres de etapas) */
+.o_form_statusbar .o_statusbar_status {
+  color: #ad1457;
+  font-weight: 600;
+}
+
+/* Botón de estado actual (seleccionado) */
+.o_web_client .o_arrow_button.o_arrow_button_current {
+  background-color: #d81b60 !important; /* Rosa oscuro sakura */
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(214, 51, 108, 0.4);
+  border: none;
+  text-transform: uppercase;
+}
+
+.o_web_client .o_arrow_button.o_arrow_button_current::before {
+  border-left-color: #d81b60 !important; /* Misma que el fondo del botón */
+}
+
+.o_web_client .o_arrow_button.o_arrow_button_current::after {
+  border-left-color: #d81b60 !important; /* Misma que el fondo del botón */
+}
+
+.o_web_client .o_arrow_button {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.o_web_client .o_arrow_button.o_arrow_button disabled {
+  color: #d81b60 !important;
+}
+/* STATUSBAR::FIN */
+
+/* STATS BUTTONS::INICIO */
+/* Botones de la caja */
+.o-form-buttonbox .oe_stat_button,
+.o-form-buttonbox .btn {
+  background-color: #ec407a;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(236, 64, 122, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover y activo */
+.o-form-buttonbox .oe_stat_button:hover,
+.o-form-buttonbox .btn:hover {
+  background-color: #f06292;
+  transform: scale(1.05);
+}
+
+.o-form-buttonbox .oe_stat_button:active,
+.o-form-buttonbox .btn:active {
+  background-color: #d81b60;
+}
+
+/* Iconos dentro de los botones */
+.o-form-buttonbox .oe_stat_button i,
+.o-form-buttonbox .btn i {
+  color: white !important;
+}
+
+/* Los numeros con los counts y sus textos */
+/* Color blanco para el número y la unidad dentro del botón de estado */
+.o-form-buttonbox .oe_stat_button .o_stat_value,
+.o-form-buttonbox .oe_stat_button .o_stat_info,
+.o-form-buttonbox .oe_stat_button .o_field_widget,
+.o-form-buttonbox .oe_stat_button .o_field_widget span {
+  color: white !important;
+}
+/* STATS BUTTONS::FIN */
+
+/* FONDO DEL FORM::INICIO */
+.o_web_client .o_form_view {
+  background: linear-gradient(to bottom, #fff0f5, #ffeef0); /* fondo Sakura suave */
+  padding: 2rem;
+  border-radius: 16px;
+  min-height: 100%;
+}
+
+.o_form_view .o-form-buttonbox,
+.o_form_view .o_form_sheet_bg,
+.o_form_view .o_form_sheet
+.o_form_view .o_notebook_headers {
+  background: transparent !important;
+  box-shadow: none;
+  border: none;
+}
+/* FONDO DEL FORM::FIN*/
+/* NOTEBOOK::INICIO*/
+
+/* Estilo base de los tabs */
+.nav.nav-tabs.flex-row.flex-nowrap .nav-link {
+  background-color: #d81b60;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+  font-weight: 600;
+  border: 1px solid #f8bbd0;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  margin-right: 0.3rem;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+}
+
+/* Hover y activa */
+.nav.nav-tabs.flex-row.flex-nowrap .nav-link:hover {
+  transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.nav.nav-tabs.flex-row.flex-nowrap .nav-link.active {
+  background-color: #fff6fa !important;
+  color: #d81b60 !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+/* NOTEBOOK::FIN */
+
+/* TREE::INICIO */
+/* Tablas */
+.o_form_view table {
+  background-color: rgba(255, 248, 252, 0.98);
+  border-radius: 16px;
+  border: 2px solid #f8bbd0;
+  box-shadow: 0 6px 12px rgba(255, 182, 193, 0.6);
+  overflow: hidden;
+  width: 100%;
+  table-layout: auto !important;
+}
+
+.o_form_view thead th {
+  background-color: #fce4ec;
+  color: #ad1457;
+  font-weight: 700;
+  border: 1px solid #f8bbd0;
+  padding: 0.8rem;
+  text-shadow: 1px 1px #fff;
+}
+
+.o_form_view tbody td {
+  background-color: #fff0f5;
+  color: #6a1b4d;
+  border: 1px solid #f8bbd0;
+  padding: 0.8rem;
+}
+
+/* Hover sobre filas */
+.o_form_view tbody tr:hover {
+  background-color: #fcd2e2;
+  transition: background-color 0.2s ease;
+}
+/* TREE::FIN */
+
+/* CHATTER::INICIO */
+
+.o_form_view .o_FormRenderer_chatterContainer .o_ChatterTopbar {
+  background: linear-gradient(to bottom, #ffeef8, #fff8f2);
+}
+
+.o_form_view .o_FormRenderer_chatterContainer .o_ThreadView_bottomPart {
+    background-color: #d81b60 !important;
+}
+
+.o_form_view .o_FormRenderer_chatterContainer .o_ChatterTopbar_buttonSendMessage {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.o_form_view .o_FormRenderer_chatterContainer .o_FollowerListMenu_buttonFollowers {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.o_form_view .o_FormRenderer_chatterContainer .o_ChatterTopbar_buttonLogNote {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+.o_form_view .o_FormRenderer_chatterContainer .o_ChatterTopbar_buttonScheduleActivity {
+  background-color: #d81b60;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}
+
+/* Mensajes individuales */
+.o_form_view .o_MessageList .o_Message_core {
+  background: #fffafd !important;
+  border: 1px solid #f8bbd0;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #6a1b4d;
+  box-shadow: 0 2px 4px rgba(248, 187, 208, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover sobre mensaje */
+.o_form_view .o_MessageList .o_Message_core:hover {
+  background-color: #ffe4ec !important;
+}
+
+.o_form_view .o_MessageActionList {
+  background-color: #d81b60 !important;
+  border-color: #d81b60 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(216, 27, 96, 0.5);
+}

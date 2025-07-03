@@ -1,0 +1,66 @@
+.o_action_manager .o-settings-form-view.o_field_highlight.o_xxl_form_view.h-100.o_action.o_view_controller.o_form_view {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff) !important; /* Tono hielo */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.o-settings-form-view .o_form_view_container {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff) !important; /* Tono hielo */
+  backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(129, 212, 250, 0.6), inset 0 0 12px rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+}
+
+/* Fondo helado potente al contenedor principal */
+.o-settings-form-view .o_form_view.o_view_controller.o_settings_form_view {
+  background: linear-gradient(to right, rgba(163, 204, 230, 0.85), rgba(127, 188, 211, 0.85));
+  backdrop-filter: blur(6px) saturate(180%);
+  border-radius: 18px;
+  padding: 2rem;
+}
+
+/* Asegura que los fondos internos no lo tapen */
+.o-settings-form-view .o_form_sheet_bg,
+.o_form_sheet {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Elimina sombras que opaquen el fondo */
+.o-settings-form-view .o_form_view_container {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ❄️ Efecto escarchado al panel de control */
+.o-settings-form-view .o_control_panel {
+  background: #b0d8ef;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.o-settings-form-view .breadcrumb {
+  background: #b0d8ef;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.o-settings-form-view .breadcrumb,
+.breadcrumb li,
+.breadcrumb a {
+  color: #01579b !important; /* azul hielo */
+}
+
+.o-settings-form-view .o_cp_top_right {
+  background: #b0d8ef;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.o-settings-form-view .o_cp_top_right .o_searchview_input_container {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff) !important;
+}
+
+/* ❄️ Fondo helado fuerte para pantalla de ajustes */
+.o-settings-form-view .settings {
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff) !important;
+  color: #01579b !important; /* azul hielo */
+}
